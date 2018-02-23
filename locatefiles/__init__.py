@@ -25,8 +25,8 @@ class LocateFiles(DirectoryPaneCommand):
 			yield QuicksearchItem(filep)
 
 	def _locate(self, query):
-		if PLATFORM == 'Mac':
-			return ['/usr/bin/mdfind', '-name ', query]
-		elif PLATFORM == 'Linux':
+		if PLATFORM == 'Linux':
 			return ['/usr/bin/locate', '-l10', query]
+		#elif PLATFORM == 'Mac':
+		#	return ['/usr/bin/mdfind', '-name ', query]
 		raise NotImplementedError(PLATFORM)
