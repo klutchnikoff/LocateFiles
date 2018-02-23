@@ -1,0 +1,3 @@
+[
+	{ "keys": ["Alt+l"], "command": "locate_files" }
+]
