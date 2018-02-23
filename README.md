@@ -1,8 +1,8 @@
-## RenameSelectedFiles
+## LocateFiles
 
-Plugin for [fman.io](https://fman.io) that gives you the ability to rename a selection od files.
+Plugin for [fman.io](https://fman.io) that gives you the ability to locate files (Linux/Mac).
 
 ### HotKeys Set
 
-<Alt+r> - Rename selected files.
+<Alt+l> - Locate files.
 
