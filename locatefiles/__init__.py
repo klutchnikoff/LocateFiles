@@ -20,7 +20,7 @@ class LocateFiles(DirectoryPaneCommand):
 		if query.endswith("$"):
 			query = query[:-1]
 			located_files = run(self._locate(query), stdout=PIPE)
-			located_files = located_files.stdout.decode("utf-8").split()
+			located_files = located_files.stdout.decode("utf-8").split("\n")
 			for filep in located_files:
 				yield QuicksearchItem(filep)
 		else:
